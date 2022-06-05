@@ -9,3 +9,16 @@
 * __GitHub:__ SHTAKET1032
 * __Discord:__ Vasiliy#5453
 
+---
+### About me
+<p> I want to try myself in the frontend development.  </p>
+
+---
+### Skills
+* HTML5
+* CSS3
+* JavaScript (Basics)
+* Git, GitHub
+* VSCode
+* Figma
+
