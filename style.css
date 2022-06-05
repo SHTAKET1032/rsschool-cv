@@ -11,5 +11,10 @@ div {
 
 h1 {
   color: cyan;
- text-align: center;
+  text-align: center;
+}
+
+p {
+  color: darkgray;
+  text-align: center;
 }
