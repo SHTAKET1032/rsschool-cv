@@ -5,30 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <title>My CV</title>
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <div class="header_leaft"></div>
-      <div class="header_right">
-        <div class="header_right_nav">
+    <header> 
+      <div class="header_nav">
           <nav>
-            <ul>
-              <li><a href="#" class="nav_link">О себе</a></li>
-              <li><a href="#" class="nav_link">Контакты</a></li>
-              <li><a href="#" class="nav_link">Навыки</a></li>
-              <li><a href="#" class="nav_link">Проекты</a></li>
-              <li><a href="#" class="nav_link">Пример кода</a></li>
-              <li><a href="#" class="nav_link">Май инглиш из гуд</a></li>
+            <ul class="nav_link_ul">
+              <li><a href="#" class="nav_link_li">О себе</a></li>
+              <li><a href="#" class="nav_link_li">Контакты</a></li>
+              <li><a href="#" class="nav_link_li">Навыки</a></li>
+              <li><a href="#" class="nav_link_li">Проекты</a></li>
+              <li><a href="#" class="nav_link_li">Пример <br> кода</a></li>
+              <li><a href="#" class="nav_link_li">Май инглиш <br> из гуд</a></li>
             </ul>
           </nav>
         </div>
-        <div class="header_right_descr">
-          <h1>Привет! Меня зовут Урбеч.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo consectetur, minus vitae repellat
+     
+      <div class="header_bottom">
+        <div class="header_bottom_foto"><img class="profileFoto" src="./img/Vaas.png" alt="profileFoto"></div>
+        <div class="header_bottom_descr">
+          <h1>Привет! Меня зовут Василий.</h1>
+          <p class="header_bottom_descr_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo consectetur, minus vitae repellat
             hic.</p>
         </div>
       </div>
@@ -39,11 +41,11 @@
         <h2>Сам информэйтион эбаут ми.</h2>
       </div>
       <div class="main_bottom">
-        <div class="flex_card">
+        <div class="about">
           <h3>О себе</h3>
           <div class="flex_card_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolorum?</div>
         </div>
-        <div class="flex_card">
+        <div class="contacts">
           <h3>Контакты</h3>
           <div class="flex_card_descr">
             <ul>
@@ -54,7 +56,7 @@
             </ul>
           </div>
         </div>
-        <div class="flex_card">
+        <div class="skills_projects_english">
           <h3>Навыки</h3>
           <div class="flex_card_descr">
             <ul>
@@ -65,15 +67,15 @@
             </ul>
           </div>
         </div>
-        <div class="flex_card">
+        <div class="skills_projects_english">
           <h3>Проекты</h3>
           <div class="flex_card_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolorum?</div>
         </div>
-        <div class="flex_card">
+        <div class="my_code">
           <h3>Пример кода</h3>
           <div class="flex_card_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolorum?</div>
         </div>
-        <div class="flex_card">
+        <div class="skills_projects_english">
           <h3>Май инглиш из гуд</h3>
           <div class="flex_card_descr">Lo sit amet consectetur adipisicing elit. Nemo, dolorum?</div>
         </div>
@@ -81,15 +83,12 @@
     </main>
 
     <footer>
-      <div class="footer_left">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-      </div>
-      <div class="footer_right">
-        <div class="footer_right_head"><a href="#" class="footer_link"> Лого курса </a></div>
-        <div class="footer_right_middle">Год создания</div>
-        <div class="footer_right_bottom"><a href="#" class="footer_link"> Гитхаб </a></div>
-      </div>
+        <div class="footer_left"><a href="#" class="footer_link"> Лого курса </a></div>
+        <div class="footer_middle">Год создания</div>
+        <div class="footer_right"><a href="#" class="footer_link"> Гитхаб </a></div>
     </footer>
-    </div>
+ </div>
+
+   
 </body>
 </html>
