@@ -1,0 +1,100 @@
+@media (max-width: 735px) {
+
+    .profile-img{
+        width: 40%;
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .contacts, .skills, .projects{
+        margin: 2% 0;
+        width: 30%;
+    }
+
+
+    .languages, .my_code{
+        width: 45%;
+    }
+
+    .my_code{
+        margin: 2% 0;
+        transform: translateX(0%);
+    }
+}
+
+
+@media (max-width: 660px) {
+
+    .navbar__list{
+        display: none;
+    }
+
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger__menu-icon{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 0 0;
+    }
+
+    .icon-line {
+        width: 18px;
+        height: 2px;
+        background-color: #000000;
+        transition: 500ms all;
+    }
+
+    .icon-line:nth-child(2){
+             margin: 2px 0
+         }
+
+
+    .burger__menu-open{
+        display: flex;
+    }
+
+
+
+    .header__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts, .skills, .projects, .languages{
+        width: 45%;
+    }
+
+    .my_code{
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .profile-img{
+        width: 55%;
+    }
+
+    .h1-title{
+        font-size: 3em;
+    }
+
+    .h1-subtitle{
+        font-size: 2em;
+    }
+
+    .contacts, .skills, .projects, .languages{
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 60px;
+    }
+
+}

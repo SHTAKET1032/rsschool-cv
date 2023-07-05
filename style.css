@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Mukta', sans-serif;
     /*justify-content: center;*/
 }
 
@@ -12,6 +13,13 @@
     padding: 0 20px;
     max-width: 1024px;
 }
+
+
+.burger__menu-box, .burger__menu-open{
+    display: none
+}
+
+
 
 .header{
     /*width: 1024px;*/
@@ -25,8 +33,9 @@
 }
 
 
+
 .profile-img {
-    width: 100%;
+    width: 50%;
     border-radius: 10%;
     border: 2px #79a832 solid;
 }
@@ -43,19 +52,20 @@
 }
 
 .navbar__list-item {
-    display: block;
+    /*display: block;*/
+    font-size: 20px;
     text-align: center;
     background-color: rgba(58, 62, 64, 0.2);;
     border: 2px #79a832 solid;
     border-radius: 8px;
     padding: 7px;
-    transition: 0.9s;
+    transition: 0.2s;
 }
 
 .navbar__list-item:hover {
     border-color: #79a832;
     background-color: #32a869;
-    scale: 105%;
+    scale: 101%;
 }
 
 .navbar__link:active {
@@ -67,13 +77,13 @@
 
 .header__bottom {
     display: flex;
-    justify-content: space-between;
-    padding: 2% 0 0;
+    justify-content: space-around;
+    padding: 10% 0;
 }
 
 .header__bottom-txt {
-    padding-right: 4%;
-    width: 49%;
+    /*padding-right: 4%;*/
+    /*width: 49%;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +98,7 @@
 
 .h1-subtitle {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -99,41 +109,51 @@
     justify-content: space-between;
     flex-wrap: wrap;
     line-height: 25px;
+    padding: 5% 0 10% 0;
 }
 
-h2 {
+.h2-title {
     text-align: center;
+    font-size: 2.5em;
 }
 
-.about {
+.h3-title {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 0 0 0;
+    text-decoration: underline 3px #79a832 solid;
+}
+
+
+.about, .contacts, .my_code, .skills, .projects, .languages{
     background-color: rgba(58, 62, 64, 0.2);;
     border: 2px #79a832 solid;
     border-radius: 5px;
+}
+
+.content-card{
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.about {
     width: 70%;
     padding: 0 8px 8px;
 }
 
 .contacts {
-    background-color: rgba(58, 62, 64, 0.2);;
-    border: 2px #79a832 solid;
-    border-radius: 5px;
     width: 27%;
 }
 
 .my_code {
-    background-color: rgba(58, 62, 64, 0.2);;
-    border: 2px #79a832 solid;
-    border-radius: 5px;
     width: 40%;
     order: 1;
     transform: translateX(75%);
 }
 
-.skills_projects_english {
+.skills, .projects, .languages {
     margin: 2% 0;
-    background-color: rgba(58, 62, 64, 0.2);;
-    border: 2px #79a832 solid;
-    border-radius: 5px;
     width: 32%;
 }
 
@@ -150,27 +170,22 @@ h2 {
     /*padding: 3% 0;*/
 }
 
-.footer_logo {
+.footer-logo {
     width: 85px;
 }
 
-ul {
-    list-style: square;
-}
-
-h3 {
-    text-align: center;
-    text-decoration: underline 3px #79a832 solid;
+.footer-logo:hover{
+    scale: 105%;
 }
 
 .about_descr {
     text-align: justify;
 }
 
-.footer_middle {
-    font-size: 3em;
+.footer__middle {
+    font-size: 3rem;
 }
 
-#projects_id {
-    text-align: center;
-}
+
+
+
