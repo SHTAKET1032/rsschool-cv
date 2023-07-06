@@ -15,7 +15,7 @@
 }
 
 
-.burger__menu-box, .burger__menu-open{
+.burger__menu-box, .burger__menu-open, .shadow{
     display: none
 }
 
