@@ -126,6 +126,7 @@
 
 
 .about, .contacts, .my_code, .skills, .projects, .languages{
+    display: none;
     background-color: rgba(58, 62, 64, 0.2);;
     border: 2px #79a832 solid;
     border-radius: 5px;

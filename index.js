@@ -8,22 +8,8 @@ burgerIcon.addEventListener('click',() => {
     burgerMenuOpen.classList.toggle('burger__menu-open-active');
     shadow.classList.toggle('shadow-active');
     burgerIcon.classList.toggle('burger__menu-icon-active');
-    // iconLines.forEach(item=>{
-    //     item.classList.toggle('icon-line-active');
-    // })
-    // iconLines[0].style.transform = '(-45deg)';
-    // iconLines[1].style.display = 'none';
-    // iconLines[2].style.transform = 'rotate(45deg)';
 })
 
-
-
-// menuItem.forEach(item=>{
-//     item.addEventListener('click', ()=>{
-//         burgerMenuOpen.classList.toggle('burger__menu-open-active');
-//         shadow.classList.toggle('shadow-active');
-//     })
-// })
 
 
 
@@ -39,3 +25,27 @@ shadow.addEventListener('click', ()=>{
     burgerMenuOpen.classList.toggle('burger__menu-open-active');
     burgerIcon.classList.toggle('burger__menu-icon-active');
 })
+
+
+
+
+
+const about = document.querySelector('.about'),
+      contacts = document.querySelector('.contacts'),
+      skills = document.querySelector('.skills'),
+      projects = document.querySelector('.projects'),
+      languages = document.querySelector('.languages'),
+      code = document.querySelector('.my_code'),
+      arrNode = [about, contacts, skills, projects, languages, code];
+
+
+function makeBlock(node){
+    node.style.display = 'block';
+}
+
+arrNode.forEach((item, index)=>{
+    setTimeout(()=>{
+        makeBlock(item);
+    }, index * 1000)
+});
+
