@@ -49,3 +49,12 @@ arrNode.forEach((item, index)=>{
     }, index * 1000)
 });
 
+
+const navbarItems = [...document.querySelectorAll('.navbar__list-item')];
+
+
+navbarItems.forEach((item, index)=>{
+    setTimeout(()=>{
+        makeBlock(item);
+    }, index * 1000)
+})

@@ -1,15 +1,18 @@
 .body{
-    background: radial-gradient(circle at 50% 50%, #b2ff78 0, #97fa77 16.67%, #76f174 33.33%, #48e56f 50%, #00d96c 66.67%, #00cf6d 83.33%, #00c872 100%);
+    background: linear-gradient(90deg, #737570,#bfbebb);
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Mukta', sans-serif;
+    cursor: default;
     /*justify-content: center;*/
 }
 
 .container{
-    background-color: #ffc64f;
+    background-color: rgba(0,0,0,0.3);
+    border: 3px solid rgba(0,0,0,0.5);
+    border-radius: 2%;
     padding: 0 20px;
     max-width: 1024px;
 }
@@ -29,7 +32,7 @@
 }
 
 .navbar {
-    padding: 2% 0 0;
+    padding: 3% 0 0;
 }
 
 
@@ -37,7 +40,7 @@
 .profile-img {
     width: 50%;
     border-radius: 10%;
-    border: 2px #79a832 solid;
+    border: 2px rgba(0,0,0,0.5) solid;
 }
 
 .navbar__list {
@@ -52,19 +55,21 @@
 }
 
 .navbar__list-item {
-    /*display: block;*/
+    display: none;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(58, 62, 64, 0.2);;
-    border: 2px #79a832 solid;
+    background-color: #737570;
+    color: #ffffff;
+    border: 2px rgba(0,0,0,0.5) solid;
     border-radius: 8px;
     padding: 7px;
     transition: 0.2s;
 }
 
 .navbar__list-item:hover {
-    border-color: #79a832;
-    background-color: #32a869;
+    /*border-color: #79a832;*/
+    background-color: #ffffff;
+    color: #000000;
     scale: 101%;
 }
 
@@ -94,12 +99,14 @@
     margin: 0;
     font-size: 4em;
     text-align: center;
+    color: #ffffff;
 }
 
 .h1-subtitle {
     margin: 0;
     font-size: 2.5em;
     text-align: center;
+    color: #ffffff;
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -115,22 +122,30 @@
 .h2-title {
     text-align: center;
     font-size: 2.5em;
+    color: #ffffff;
 }
 
 .h3-title {
     font-size: 2em;
     text-align: center;
     padding: 10px 0 0 0;
-    text-decoration: underline 3px #79a832 solid;
+    text-decoration: underline 2px rgba(0,0,0,0.5) solid;
+    color: #ffffff;
 }
 
 
 .about, .contacts, .my_code, .skills, .projects, .languages{
     display: none;
     background-color: rgba(58, 62, 64, 0.2);;
-    border: 2px #79a832 solid;
+    border: 2px rgba(0,0,0,0.5) solid;
     border-radius: 5px;
 }
+
+.contacts .content__list-item{
+    cursor: default;
+}
+
+
 
 .content-card{
     padding: 10px 5px;
