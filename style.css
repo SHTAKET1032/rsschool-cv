@@ -1,30 +1,37 @@
-.body{
-    background: linear-gradient(90deg, #737570,#bfbebb);
+.body {
+    background: linear-gradient(90deg, #737570, #bfbebb);
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Mukta', sans-serif;
     cursor: default;
+    height: 100%;
     /*justify-content: center;*/
 }
 
-.container{
-    background-color: rgba(0,0,0,0.3);
-    border: 3px solid rgba(0,0,0,0.5);
+.body-no-scroll {
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(0, 0, 0, 0.5);
     border-radius: 2%;
     padding: 0 20px;
     max-width: 1024px;
 }
 
 
-.burger__menu-box, .burger__menu-open, .shadow{
+/*.burger__menu-box, .burger__menu-open, .shadow{*/
+/*    display: none*/
+/*}*/
+.burger__menu-box, .burger__menu-open {
     display: none
 }
 
 
-
-.header{
+.header {
     /*width: 1024px;*/
     display: flex;
     flex-direction: column;
@@ -36,11 +43,10 @@
 }
 
 
-
 .profile-img {
     width: 50%;
     border-radius: 10%;
-    border: 2px rgba(0,0,0,0.5) solid;
+    border: 2px rgba(0, 0, 0, 0.5) solid;
 }
 
 .navbar__list {
@@ -60,22 +66,16 @@
     text-align: center;
     background-color: #737570;
     color: #ffffff;
-    border: 2px rgba(0,0,0,0.5) solid;
+    border: 2px rgba(0, 0, 0, 0.5) solid;
     border-radius: 8px;
     padding: 7px;
     transition: 0.2s;
 }
 
 .navbar__list-item:hover {
-    /*border-color: #79a832;*/
     background-color: #ffffff;
     color: #000000;
     scale: 101%;
-}
-
-.navbar__link:active {
-    border-color: #79a832;
-    background-color: #79a832;
 }
 
 /*/////////////////////////////////////////////////////////*/
@@ -87,8 +87,6 @@
 }
 
 .header__bottom-txt {
-    /*padding-right: 4%;*/
-    /*width: 49%;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,25 +127,24 @@
     font-size: 2em;
     text-align: center;
     padding: 10px 0 0 0;
-    text-decoration: underline 2px rgba(0,0,0,0.5) solid;
+    text-decoration: underline 2px rgba(0, 0, 0, 0.5) solid;
     color: #ffffff;
 }
 
 
-.about, .contacts, .my_code, .skills, .projects, .languages{
+.about, .contacts, .my_code, .skills, .projects, .languages {
     display: none;
     background-color: rgba(58, 62, 64, 0.2);;
-    border: 2px rgba(0,0,0,0.5) solid;
+    border: 2px rgba(0, 0, 0, 0.5) solid;
     border-radius: 5px;
 }
 
-.contacts .content__list-item{
+.contacts .content__list-item {
     cursor: default;
 }
 
 
-
-.content-card{
+.content-card {
     padding: 10px 5px;
     text-align: center;
     font-size: 1.5em;
@@ -190,7 +187,7 @@
     width: 85px;
 }
 
-.footer-logo:hover{
+.footer-logo:hover {
     scale: 105%;
 }
 
